@@ -3,8 +3,8 @@ import bodyParser from "body-parser";
 
 const app = express ();
 const port = 3000;
-const PUBLISHABLE_KEY = "pk_test_51MVTzOSGV3ffUpQpwGAcK3NC5jG9JVljdBRXueRvSh8mYoKmo4QC0nwyMGVzWnJmNgtUsAYgOzK7h4H0V2rLWGzC00iXFyI7uv";
-const SECRET_KEY= "sk_test_51MVTzOSGV3ffUpQpiSilfnpMTWDmnPTQysFeFlxP0LwjncMYn78wWeRYVLLYFirujt9KlwbkwBhoBWx8X3DTPbMR00b8JTHMEu";
+const PUBLISHABLE_KEY = "pk_test_5dfdfdz_PLACE_YOUR_OWN_FKING_KEY_HERE_rsdfhsdjfsv";
+const SECRET_KEY= "sk_test_51__YOU_DONT_UNDERSTAND_PLACE_YOUR_KEY_HERE_MFKR__8JTHMEu";
 import Stripe from 'stripe';
 const stripe = Stripe(SECRET_KEY, {apiVersion : "2022-08-01"})
 

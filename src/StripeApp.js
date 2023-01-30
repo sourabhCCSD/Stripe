@@ -8,7 +8,7 @@ const StripeApp = (props) => {
     const [cardDetails, setCardDetails] = useState('')
     const {confirmPayment, loading} = useConfirmPayment();
 
-    const API_URL = 'http://192.168.1.5:3000'
+    const API_URL = 'http://192.168.1.6:3000'
 
     const fetchPaymentIntentClientSecret = async () => {
         const response = await fetch(`${API_URL}/create-payment-intent`, 
@@ -43,7 +43,7 @@ const StripeApp = (props) => {
                 
                 const {paymentIntent, error} = await confirmPayment(
                     clientSecret, {
-                        type: 'Card',
+                        paymentMethodType: 'Card',
                         billingDetails: billingDetails,
                         
                     }
